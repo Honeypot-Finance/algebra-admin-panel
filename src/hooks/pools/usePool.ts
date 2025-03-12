@@ -97,7 +97,7 @@ export function usePool(
           token1.wrapped,
           globalState[2],
           globalState[0].toString(),
-          ,
+          ADDRESS_ZERO,
           Number(liquidity),
           globalState[1],
           tickSpacing

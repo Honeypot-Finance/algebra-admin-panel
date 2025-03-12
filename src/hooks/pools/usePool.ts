@@ -9,6 +9,7 @@ import { Pool } from "@cryptoalgebra/integral-sdk";
 import { Address } from "wagmi";
 import { useCurrency } from "@/hooks/common/useCurrency";
 import { useMemo } from "react";
+import { ADDRESS_ZERO } from "@cryptoalgebra/integral-sdk";
 
 export const PoolState = {
   LOADING: "LOADING",
@@ -96,7 +97,7 @@ export function usePool(
           token1.wrapped,
           globalState[2],
           globalState[0].toString(),
-          ADDRESS_ZERO,
+          ,
           Number(liquidity),
           globalState[1],
           tickSpacing
